@@ -1,204 +1,335 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bluo House4u - خدمات العقارات</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- خطوط Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo">Bluo House4u</div>
-        <nav>
-            <ul>
-                <li><a href="#hero">الرئيسية</a></li>
-                <li><a href="#search">بحث العقارات</a></li>
-                <li><a href="#properties">العقارات</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#team">الفريق</a></li>
-                <li><a href="#reviews">التقييمات</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
-                <li><a href="#" class="lang-btn" onclick="toggleLang()">EN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero" id="hero">
-        <h1>مرحبًا بك في Bluo House4u</h1>
-        <p>كل خدمات العقارات في مكان واحد: إيجار، بيع، شراء، بناء وتشييد، والمزيد!</p>
-        <a href="#search" class="cta-btn">ابحث الآن</a>
-        <!-- روابط السوشيال ميديا -->
-        <div class="social">
-            <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="whatsapp.svg" alt="WhatsApp"></a>
-        </div>
-    </section>
-    <!-- بحث متقدم -->
-    <section id="search" class="search">
-        <h2>ابحث عن عقارك</h2>
-        <form>
-            <select>
-                <option>نوع العقار</option>
-                <option>شقة</option>
-                <option>منزل</option>
-                <option>تجاري</option>
-            </select>
-            <select>
-                <option>جنوب السودان</option>
-                <option>جوبا</option>
-                <option>واو</option>
-                <option>رنك</option>
-            </select>
-            <input type="number" placeholder="السعر من">
-            <input type="number" placeholder="السعر إلى">
-            <select>
-                <option>عدد الغرف</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3+</option>
-            </select>
-            <button type="submit">بحث</button>
-        </form>
-    </section>
-    <!-- معرض العقارات -->
-    <section id="properties" class="properties">
-        <h2>العقارات المختارة</h2>
-        <div class="gallery">
-            <div class="property">
-                <img src="house1.jpg" alt="عقار 1">
-                <h3>شقة فاخرة - الرياض</h3>
-                <p>3 غرف | 2 حمام | 120 متر</p>
-                <a href="#details1" class="details-btn">تفاصيل</a>
-            </div>
-            <div class="property">
-                <img src="house2.jpg" alt="عقار 2">
-                <h3>فيلا حديثة - جدة</h3>
-                <p>5 غرف | 4 حمام | 350 متر</p>
-                <a href="#details2" class="details-btn">تفاصيل</a>
-            </div>
-            <div class="property">
-                <img src="house3.jpg" alt="عقار 3">
-                <h3>مكتب تجاري - الدمام</h3>
-                <p>200 متر | موقع مميز</p>
-                <a href="#details3" class="details-btn">تفاصيل</a>
-            </div>
-        </div>
-    </section>
-    <!-- تفاصيل العقار (نموذج مبسط) -->
-    <section id="details1" class="details">
-        <h2>تفاصيل العقار - شقة فاخرة بالرياض</h2>
-        <img src="house1.jpg" alt="شقة الرياض">
-        <ul>
-            <li>الموقع: الرياض - حي النخيل</li>
-            <li>السعر: 350,000 ريال</li>
-            <li>المساحة: 120 متر</li>
-            <li>عدد الغرف: 3</li>
-            <li>عدد الحمامات: 2</li>
-        </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <a href="#contact" class="cta-btn">اطلب معاينة</a>
-    </section>
-    <!-- الخدمات -->
-    <section id="services" class="services">
-        <h2>الخدمات العقارية</h2>
-        <div class="service-list">
-            <div class="service">
-                <h3>إيجار المنازل والشقق</h3>
-                <p>خيارات متعددة بمواقع مميزة وأسعار مناسبة.</p>
-            </div>
-            <div class="service">
-                <h3>بيع وشراء العقارات</h3>
-                <p>بيع وشراء بأمان مع استشارات مجانية.</p>
-            </div>
-            <div class="service">
-                <h3>بناء وتشييد</h3>
-                <p>تصميم وتنفيذ بأعلى جودة.</p>
-            </div>
-            <div class="service">
-                <h3>إدارة الأملاك</h3>
-                <p>إدارة احترافية وشفافية كاملة.</p>
-            </div>
-        </div>
-    </section>
-    <!-- تقييم العملاء -->
-    <section id="reviews" class="reviews">
-        <h2>تقييمات العملاء</h2>
-        <div class="review-list">
-            <div class="review">
-                <p>"أفضل خدمة عقارية تعاملت معها، فريق محترف وسريع في الاستجابة."</p>
-                <span>- أحمد، الرياض</span>
-            </div>
-            <div class="review">
-                <p>"وجدت شقتي المثالية عبر الموقع بكل سهولة."</p>
-                <span>- منى، جدة</span>
-            </div>
-            <div class="review">
-                <p>"نصائحهم في البناء والتشييد كانت رائعة."</p>
-                <span>- خالد، الدمام</span>
-            </div>
-        </div>
-        <!-- نموذج إضافة تقييم جديد -->
-        <form class="review-form">
-            <h3>أضف تقييمك</h3>
-            <input type="text" placeholder="الاسم">
-            <textarea placeholder="تعليقك"></textarea>
-            <button type="submit">إرسال التقييم</button>
-        </form>
-    </section>
-    <!-- فريق العمل -->
-    <section id="team" class="team">
-        <h2>فريق العمل</h2>
-        <div class="team-list">
-            <div class="member">
-                <img src="avatar1.png" alt="مدير المكتب">
-                <h4>محمد العتيبي</h4>
-                <p>مدير المكتب</p>
-            </div>
-            <div class="member">
-                <img src="avatar2.png" alt="مستشار عقاري">
-                <h4>سارة المطيري</h4>
-                <p>مستشارة عقارية</p>
-            </div>
-            <div class="member">
-                <img src="avatar3.png" alt="مهندس البناء">
-                <h4>خالد الغامدي</h4>
-                <p>مهندس البناء</p>
-            </div>
-        </div>
-    </section>
-    <!-- اتصل بنا -->
-    <section id="contact" class="contact">
-        <h2>اتصل بنا / اطلب خدمة</h2>
-        <form>
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="service">الخدمة المطلوبة:</label>
-            <select id="service" name="service">
-                <option>استشارة عقارية</option>
-                <option>طلب بناء أو تشييد</option>
-                <option>بيع عقار</option>
-                <option>شراء عقار</option>
-                <option>إدارة الأملاك</option>
-            </select>
-            <label for="message">رسالتك:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">إرسال الطلب</button>
-        </form>
-    </section>
-    <footer>
-        جميع الحقوق محفوظة &copy; Bluo House4u 2025
-    </footer>
-    <!-- دعم لغتين عبر جافاسكريبت بسيط -->
-    <script>
-        function toggleLang() {
-            document.body.dir = document.body.dir === "rtl" ? "ltr" : "rtl";
-            document.documentElement.lang = document.documentElement.lang === "ar" ? "en" : "ar";
-            // نصوص بسيطة متغيرة (يمكن تطويرها لاحقا بملف ترجمة منفصل أو مكتبة)
-        }
-    </script>
-</body>
-</html>
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    margin: 0;
+    background: #f6f8fa;
+    color: #222;
+    direction: rtl;
+}
+
+header {
+    background: #0a3d62;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+nav a:hover, .lang-btn:hover {
+    color: #60a3bc;
+    background: #fff2;
+}
+
+.hero {
+    background: linear-gradient(135deg, #60a3bc 0%, #3c6382 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.cta-btn {
+    background: #0a3d62;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background: #60a3bc;
+}
+
+.search {
+    background: #eaf0f6;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.search h2 {
+    color: #0a3d62;
+    margin-bottom: 18px;
+}
+
+.search form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search select, .search input, .search button {
+    padding: 10px;
+    border: 1px solid #60a3bc;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #fff;
+    min-width: 120px;
+    margin-bottom: 8px;
+}
+
+.search button {
+    background: #0a3d62;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    min-width: 100px;
+}
+
+.search button:hover {
+    background: #60a3bc;
+}
+
+.properties {
+    background: #fff;
+    padding: 48px 16px;
+    text-align: center;
+}
+
+.properties h2 {
+    color: #0a3d62;
+    margin-bottom: 26px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+}
+
+.property {
+    background: #f6f8fa;
+    border-radius: 14px;
+    box-shadow: 0 3px 14px rgba(60,99,130,0.08);
+    padding: 20px 12px;
+    max-width: 260px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.property h3 {
+    color: #3c6382;
+    margin-bottom: 7px;
+    font-size: 1.1em;
+}
+
+.property p {
+    font-size: 0.95em;
+    margin-bottom: 9px;
+}
+
+.details-btn {
+    background: #0a3d62;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 12px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.details-btn:hover {
+    background: #60a3bc;
+}
+
+.services {
+    padding: 45px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #0a3d62;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.service {
+    background: #f6f8fa;
+    border-radius: 16px;
+    box-shadow: 0 3px 14px rgba(60,99,130,0.08);
+    padding: 35px 25px;
+    max-width: 320px;
+    min-width: 220px;
+}
+
+.service h3 {
+    color: #3c6382;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+}
+
+.reviews {
+    background: #eaf0f6;
+    padding: 45px 12px;
+    text-align: center;
+}
+
+.reviews h2 {
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.review {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(60,99,130,0.08);
+    max-width: 270px;
+    padding: 20px 16px;
+    font-size: 1em;
+}
+
+.review span {
+    display: block;
+    margin-top: 8px;
+    color: #3c6382;
+    font-size: 0.98em;
+}
+
+.team {
+    background: #fff;
+    padding: 45px 10px;
+    text-align: center;
+}
+
+.team h2 {
+    color: #0a3d62;
+    margin-bottom: 24px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: #eaf0f6;
+    border-radius: 15px;
+    padding: 20px 18px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.member h4 {
+    color: #3c6382;
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+
+.contact {
+    background: #eaf0f6;
+    padding: 45px 20px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #0a3d62;
+    font-size: 1.7em;
+    margin-bottom: 28px;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact label {
+    font-weight: 500;
+    color: #3c6382;
+    text-align: right;
+}
+
+.contact input, .contact textarea, .contact select {
+    padding: 11px;
+    border: 1px solid #60a3bc;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #fff;
+}
+
+.contact button[type="submit"] {
+    background: #0a3d62;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact button[type="submit"]:hover {
+    background: #60a3bc;
+}
+
+footer {
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+@media (max-width: 900px) {
+    .gallery, .service-list, .review-list, .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .property, .service, .review, .member {
+        max-width: 95vw;
+        min-width: 220px;
+    }
+}
